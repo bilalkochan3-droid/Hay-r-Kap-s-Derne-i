@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hayır Kapısı Bağış Kartı</title>
+  <link rel="stylesheet" href="donation-card.css" />
+</head>
+<body>
+  <section id="hk-donation-card" data-card-id="hk-basic" data-price="300" data-title="Sıcak Yemek" data-description="Günlük sıcak yemek desteği" data-image="https://via.placeholder.com/320x200?text=S%C4%B1cak+Yemek" data-whatsapp-number="905551112233">
+    <div class="hk-card">
+      <picture class="hk-card__media">
+        <img src="https://via.placeholder.com/320x200?text=S%C4%B1cak+Yemek" alt="Sıcak yemek bağışı" loading="lazy" />
+      </picture>
+      <div class="hk-card__body">
+        <h1 class="hk-card__title">Sıcak Yemek</h1>
+        <p class="hk-card__description">Günlük sıcak yemek desteği</p>
+        <p class="hk-card__price" data-price-text>300 ₺</p>
+      </div>
+      <div class="hk-card__actions">
+        <button type="button" class="hk-card__button" data-add-to-cart>
+          Sepete Ekle
+        </button>
+        <a class="hk-card__whatsapp" data-whatsapp-link hidden>
+          WhatsApp ile Talep Et
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="donation-card.js" defer></script>
+</body>
+</html>
