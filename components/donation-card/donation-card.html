@@ -3,30 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hayır Kapısı Bağış Kartı</title>
+  <title>Kermes Bağışı Kartı</title>
   <link rel="stylesheet" href="donation-card.css" />
 </head>
 <body>
-  <section id="hk-donation-card" data-card-id="hk-basic" data-price="300" data-title="Sıcak Yemek" data-description="Günlük sıcak yemek desteği" data-image="https://via.placeholder.com/320x200?text=S%C4%B1cak+Yemek" data-whatsapp-number="905551112233">
-    <div class="hk-card">
-      <picture class="hk-card__media">
-        <img src="https://via.placeholder.com/320x200?text=S%C4%B1cak+Yemek" alt="Sıcak yemek bağışı" loading="lazy" />
-      </picture>
-      <div class="hk-card__body">
-        <h1 class="hk-card__title">Sıcak Yemek</h1>
-        <p class="hk-card__description">Günlük sıcak yemek desteği</p>
-        <p class="hk-card__price" data-price-text>300 ₺</p>
+  <div
+    id="hk-kart-551"
+    class="hk-card-scope"
+    data-tur="5"
+    data-id="551"
+    data-title="Kermes Bağışı"
+    data-min="1"
+    data-whatsapp="05523935851"
+  >
+    <article class="hk-card" role="group" aria-labelledby="hk-card-title">
+      <figure class="hk-banner">
+        <img
+          src="https://cdn.hayirkapisi.org.tr/upload/files/bagis/kermes-gazze2.png"
+          alt="Kermes bağışı görseli"
+          loading="lazy"
+        />
+      </figure>
+      <div class="hk-card-body">
+        <header>
+          <h1 id="hk-card-title" class="hk-title">Kermes Bağışı</h1>
+        </header>
+        <label class="hk-amount" for="hk-amount-input" aria-live="polite">
+          Bağış Tutarı (₺)
+        </label>
+        <div class="hk-amount-input">
+          <span class="hk-amount-prefix" aria-hidden="true">₺</span>
+          <input
+            id="hk-amount-input"
+            name="hk-amount-input"
+            type="text"
+            inputmode="numeric"
+            pattern="[0-9]*"
+            minlength="1"
+            autocomplete="off"
+            data-amount-input
+            value="1"
+            aria-describedby="hk-price"
+          />
+        </div>
+        <p id="hk-price" class="hk-price" data-price>₺1</p>
+        <div class="hk-actions">
+          <button
+            type="button"
+            class="hk-button"
+            data-donate
+            aria-label="Kermes Bağışı için bağış yap"
+          >
+            Bağış Yap
+          </button>
+          <a
+            class="hk-whatsapp"
+            data-whatsapp
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WhatsApp ile talep et
+          </a>
+        </div>
       </div>
-      <div class="hk-card__actions">
-        <button type="button" class="hk-card__button" data-add-to-cart>
-          Sepete Ekle
-        </button>
-        <a class="hk-card__whatsapp" data-whatsapp-link hidden>
-          WhatsApp ile Talep Et
-        </a>
-      </div>
-    </div>
-  </section>
+    </article>
+  </div>
 
   <script src="donation-card.js" defer></script>
 </body>
